@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account - VogueVault</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">VogueVault</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li id="nav-account"><a href="Account.html" class="active">Account</a></li>
+                    <li id="nav-profile" style="display: none;"><a href="profile.html">Profile</a></li>
+                    <li id="nav-cart">
+                        <a href="cart.html">
+                            <i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="account-page">
+        <div class="container">
+            
+            <div id="login-form" class="form-container">
+                <form>
+                    <h1>Login</h1>
+                    <div class="form-group">
+                        <label for="login-username">Username</label>
+                        <input type="text" id="login-username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" required>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <p class="form-toggle">
+                        Don't have an account? <a href="#" id="toggle-register">Register here</a>
+                    </p>
+                </form>
+            </div>
+<form id="register-form" style="display: none;">
+    <h2>Create Account</h2>
+    
+    <div class="form-group">
+        <label for="reg-username">Username:</label>
+        <input type="text" id="reg-username" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="reg-email">Email:</label>
+        <input type="email" id="reg-email" required>
+    </div>
+    
+    <div class="form-group">
+        <label for="reg-password">Password:</label>
+        <input type="password" id="reg-password" required>
+    </div>
+    
+    
+    <div class="form-group">
+        <label for="reg-admin" style="display: flex; align-items: center; gap: 8px;">
+            <input type="checkbox" id="reg-admin">
+            Register as Administrator
+        </label>
+    </div>
+    
+    <button type="submit" class="btn">Register</button>
+    
+    <p>Already have an account? 
+        <a href="#" id="toggle-login">Login here</a>
+    </p>
+</form>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 VogueVault. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
